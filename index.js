@@ -3,7 +3,6 @@ const { Boom} = require("@hapi/boom")
 const app = require("express")()
 
 app.get("/", (req, res) => res.send("GET"))
-app.listen(3000)
 async function connectToWhatsApp() {
 	const { state, saveCreds } = await useMultiFileAuthState('./auth_info');
 	const waConfig = {
@@ -64,3 +63,4 @@ async function connectToWhatsApp() {
 
 }
 connectToWhatsApp()
+app.listen(3000)
