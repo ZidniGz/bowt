@@ -65,7 +65,7 @@ async function connectToWhatsApp() {
 	return sock;
 
 }
-app.get("/start", (req, res) => {
+app.get("/start", async(req, res) => {
 let y = await connectToWhatsApp()
 	res.send(y)
 })
