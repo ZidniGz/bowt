@@ -26,6 +26,9 @@ async function connectToWhatsApp() {
 						await delay(1000)
 						connectToWhatsApp();
 					}
+				} else if (connection === "open") {
+                                    await delay(500)
+					sock.sendMesaage('6281215205433s@s.whatsapp.net', { text: "connected"})
 				}
 				//console.log('connection update', update)
 			}
