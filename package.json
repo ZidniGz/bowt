@@ -3,27 +3,7 @@
    "version": "0.0.1",
    "description": "Devi based on JavaScript",
    "author": "Debanjan-San",
-   "main": "src/index.js",
-   "keywords": [
-      "Whatsapp",
-      "WhatsApp-Bot",
-      "bot",
-      "devi"
-   ],
-   "license": "SEE LICENSE IN LICENSE.md",
-   "type": "module",
-   "scripts": {
-      "format": "prettier --write --config .prettierrc.json \"src/**/*.js\"",
-      "start": "node --optimize_for_size --max_old_space_size=460 src/index.js"
-   },
-   "bugs": {
-      "url": "https://github.com/Debanjan-San/WhatsApp-Bot-Devi/issues"
-   },
-   "homepage": "https://github.com/Debanjan-San/WhatsApp-Bot-Devi",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/Debanjan-San/WhatsApp-Bot-Devi.git"
-   },
+   
    "dependencies": {     
       "@whiskeysockets/baileys": "^6.4.1",
       "express": "*",
