@@ -13,7 +13,7 @@ new main(oo).connect()
 
 lll();
 
-// Connect to the database using monk
+// Connect to the database using m
  async function p(sesi) {
 const db = monk("mongodb+srv://caliph71:clph1122@cluster0.e1ccz.mongodb.net/myFirstDatabase");
   const session = 'sessions'
