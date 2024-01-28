@@ -1,4 +1,4 @@
-const monk = require('monk');
+//const monk = require('monk');
 const { Boom } = require("@hapi/boom")
 const app = require('express')();
 const {  makeWASocket, DisconnectReason, makeCacheableSignalKeyStore, fetchLatestBaileysVersion, proto, BufferJSON, initAuthCreds } = require('@whiskeysockets/baileys');
