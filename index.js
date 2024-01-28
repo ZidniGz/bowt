@@ -3,16 +3,17 @@ const { Boom } = require("@hapi/boom")
 const app = require('express')();
 const {  makeWASocket, DisconnectReason, makeCacheableSignalKeyStore, fetchLatestBaileysVersion, proto, BufferJSON, initAuthCreds } = require('@whiskeysockets/baileys');
 const main = require('./main')
-app.get('/', (req, res)=> res.send('Okee'))
+
 
 async function lll() {
+ app.get('/', (req, res)=> res.send('Okee'))
 let oo = await p('owqask')
 console.log(oo)
 new main(oo).connect()
 }
 
-lll();
-
+lll().catch(console.error)
+app.listen(3000)
 // Connect to the database using m
  async function p(sesi) {
 const db = monk("mongodb+srv://caliph71:clph1122@cluster0.e1ccz.mongodb.net/myFirstDatabase");
@@ -84,4 +85,4 @@ const db = monk("mongodb+srv://caliph71:clph1122@cluster0.e1ccz.mongodb.net/myFi
   };
 };
 
-app.listen(3000)
+///pp.listen(3000)
